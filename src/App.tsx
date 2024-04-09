@@ -5,6 +5,7 @@ import LocationIcon from './assets/geo_icon.svg?react'
 
 import './App.scss'
 import { ContactLink } from './components/ContactLink/ContactLink'
+import { NumericRating } from './components/NumericRating/NumericRating'
 
 function App() {
   return (
@@ -59,7 +60,7 @@ function App() {
         <section className="content-block summary">
           <h3>Summary</h3>
           <p>I am a passionate and skilled Fullstack Web Developer looking for remote opportunities that align with my expertise and ambitions and allow me to meet some interesting and inspiring tasks.</p>
-          <p>My passion is to craft efficient, scalable, and user-friendly solutions on both front-end and back-end. I've been successfully developing complex UIs with lots of user-flows as well as scalable services involving multiple containers and queues.</p>
+          <p>My passion is to craft efficient, scalable, and user-friendly solutions on both front-end and back-end. I&apos;ve been successfully developing complex UIs with lots of user-flows as well as scalable services involving multiple containers and queues.</p>
         </section>
 
         <section className="content-block has-children experiences">
@@ -76,7 +77,15 @@ function App() {
               <span className="work-mode badge">Remote</span>
             </div>
             <div className="value">
-              <p>Helped to develop and support a complex web app for performing data monitoring, analysis and remote control of the drilling process</p>
+              <p>I was happy to work in a new industry and meet a <u>lot</u> of interesting and challenging tasks. I participated in developing:</p>
+              <ul>
+                <li>Customer web portal for performing data monitoring, analysis and remote control of the drilling process, which includes a lot of widgets and charts of all kinds displaying different types of data, theming, a bunch of user flows and complex UIs</li>
+                <li>Standalone desktop app that does same things but is being installed to the driller&apos;s workspace</li>
+                <li>Mobile app &ndash; for drillers too</li>
+                <li>Asset registry website that helps manage drilling hardware</li>
+                <li>Core libraries with components used across multiple apps</li>
+              </ul>
+              <p>This was one of my best teams so far and it was an honor for me to deliver value to these guys ❤️</p>
             </div>
           </div>
 
@@ -91,15 +100,16 @@ function App() {
               <span className="work-mode badge">Remote</span>
             </div>
             <div className="value">
-              <p>Developed the company's core product &ndash; the web app for it's members that included:</p>
+              <p>I joined this company to quickly develop the company&apos;s core product &ndash; the web app for it&apos;s members that included:</p>
               <ul>
                 <li>Social tasks for members to complete</li>
                 <li>Coins earning system</li>
-                <li>Multi-level referral system that spreads member's earnings</li>
+                <li>Multi-level referral system that spreads member&apos;s earnings up the chain</li>
                 <li>KYC verification via third-party service</li>
                 <li>A lot of launchpad-related UIs and flows</li>
                 <li>Regular profile operations like changing name, photo, contact info, password</li>
               </ul>
+              <p>The development took 2 months. I then maintained that product and continually developed new features. It was challenging, but fun 🙂</p>
             </div>
           </div>
 
@@ -109,12 +119,13 @@ function App() {
               <span className="date-span">03/2018 &mdash; 01/2020</span>
             </header>
             <div className="value">
-              <p>Me and my companion launched 2 SaaS:</p>
+              <p>Me and my companion launched 2 SaaS projects:</p>
               <ul>
-                <li>iDirect &ndash; the service for mass sendim Instagram DMs</li>
+                <li>iDirect &ndash; the service for Instagram DMs mass sending</li>
                 <li>iChat &ndash; a chat-bot to administer a chain of paid Telegram groups</li>
               </ul>
-              <p>I created and maitained Angular front-end apps as well as PHP + MySQL backends, constantly fighting highload challenges, improving overall stability and adding new features. Unfortunately these are dead nowadays because of critical changes in APIs of 3rd-party services that we relied on.</p>
+              <p>I created and maitained Angular front-end apps as well as PHP + MySQL backends, constantly fighting highload challenges, improving overall stability and adding new features.</p>
+              <p>Unfortunately these are dead nowadays because of critical changes in APIs of 3rd-party services that we highly relied on. But I&apos;m happy I had this experience, because it was really fun, and I seriously improved my skills during this period of time 💪</p>
             </div>
           </div>
 
@@ -124,7 +135,10 @@ function App() {
               <span className="date-span">at different times</span>
             </header>
             <div className="value">
-              I created a lot of my own projects, successful and not, but each time I started one I invested all my efforts to make it better than prevoius one. Also I often chose different technology/framework for it to learn something new.
+              <p>I was freelancing a lot to improve my skills and gain production experience on different projects.</p>
+              <p>I created a decent amount of my own projects, successful and not, but each time I started one I invested all my efforts to make it better than previous one. I often chose different technology/framework for it to learn something new.</p>
+              <br />
+              <p>So if you feel some kind of match with me and my personal values, feel free to drop me a message &mdash; I&apos;m always available 👋</p>
             </div>
           </div>
 
@@ -135,46 +149,90 @@ function App() {
             <img src="https://place-hold.it/100x100" />
           </div> */}
 
-          <section className="skills">
-            <h5>Frontend Skills</h5>
-            <ul>
-              <li>TypeScript</li>
-              <li>ES6+</li>
-              <li>React</li>
-              <li>Redux</li>
-              <li>Angular 15+</li>
-              <li>NgRx</li>
-              <li>RxJS</li>
-              <li>Responsive layouts</li>
-              <li>Complex UIs</li>
-            </ul>
-            <p>No need to mention basic stuff like HTML5, SASS, etc.</p>
-          </section>
+          <div className="skills-wrapper">
 
-          <section className="skills">
-            <h5>Backend Skills</h5>
-            <ul>
-              <li>Node.js + TypeScript</li>
-              <li>MySQL</li>
-              <li>MongoDB</li>
-              <li>Redis</li>
-              <li>Distributed Arch.</li>
-              <li>Microservices</li>
-              <li>Queues</li>
-              <li>DevOps</li>
-            </ul>
-            <h5>Bonus</h5>
-            <ul>
-              <li>Python</li>
-              <li>PHP</li>
-            </ul>
-          </section>
+            <section className="skills">
+              <h5 className="section-title">Frontend Skills</h5>
+              <ul>
+                <li>TypeScript
+                  {/* <Rating value={3} /> */}
+                  <NumericRating value={5} />
+                </li>
+                <li>ES6+
+                  {/* <Rating value={3} /> */}
+                  <NumericRating value={4.5} />
+                </li>
+                <li>React
+                  <NumericRating value={5} />
+                </li>
+                <li>Redux
+                  <NumericRating value={4} />
+                </li>
+                <li>Angular 15+
+                  <NumericRating value={4.5} />
+                </li>
+                <li>RxJS
+                  <NumericRating value={5} />
+                </li>
+                <li>NgRx
+                  <NumericRating value={5} />
+                </li>
+                <li>Responsive layouts
+                  <NumericRating value={5} />
+                </li>
+                <li>Complex UIs
+                  <NumericRating value={5} />
+                </li>
+              </ul>
+              <p className="additional">No need to mention basic stuff like HTML5, SASS, etc.</p>
+            </section>
+
+            <section className="skills">
+              <h5 className="section-title">Backend Skills</h5>
+              <ul>
+                <li>Node.js + TypeScript
+                  <NumericRating value={5} />
+                </li>
+                <li>MySQL
+                  <NumericRating value={4.5} />
+                </li>
+                <li>MongoDB
+                  <NumericRating value={4} />
+                </li>
+                <li>Redis
+                  <NumericRating value={4} />
+                </li>
+                <li>Distributed Arch.
+                  <NumericRating value={4} />
+                </li>
+                <li>Microservices
+                  <NumericRating value={4} />
+                </li>
+                <li>Queues
+                  <NumericRating value={4} />
+                </li>
+                <li>DevOps
+                  <NumericRating value={3} />
+                </li>
+              </ul>
+              <h5 className="bonus-title">Bonus</h5>
+              <ul>
+                <li>PHP
+                  <NumericRating value={4} />
+                </li>
+                <li>Python
+                  <NumericRating value={3} />
+                </li>
+              </ul>
+            </section>
+
+          </div>
         </aside>
 
       </section>
 
       <footer className="footer">
-        <p>That&apos;s basically it! If you've read this far you&apos;re definitely a human. Therefore, thanks for your time and have a good day! 🤝</p>
+        <p>That&apos;s basically it! If you&apos;ve read this far you&apos;re definitely a human. Therefore, thanks for your time and have a good day! 🤝</p>
       </footer>
     </>
   )

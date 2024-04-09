@@ -2,7 +2,7 @@
   --padding: 30px;
   --experience-items-spacing: 50px;
 
-  max-width: 990px;
+  max-inline-size: 990px;
   margin: 0 auto;
   padding: var(--padding);
 
@@ -76,21 +76,6 @@
     .profile {
       grid-area: aside;
       margin-inline-start: calc(var(--padding) * -1);
-      padding: var(--padding);
-
-      // background-color: #cee6f1;
-      background-color: #cbe0ea;
-
-      // & > .photo {
-      //   img {
-      //     display: block;
-      //     width: 100%;
-      //   }
-      // }
-
-      // & > .skills {
-      //   padding: var(--padding);
-      // }
     }
   }
 
@@ -104,6 +89,27 @@
 
       & + .content-block-nested {
         margin-block-start: var(--experience-items-spacing);
+      }
+    }
+
+    ul {
+      padding-inline-start: 15px;
+
+      li {
+        &::before {
+          content: '';
+          display: inline-block;
+          margin-inline-end: 0.6em;
+          inline-size: 0.4em;
+          block-size: 0.4em;
+          border-radius: 50%;
+          background-color: #4295bc;
+          vertical-align: middle;
+        }
+
+        & + li {
+          margin-block-start: 5px;
+        }
       }
     }
 
@@ -150,12 +156,69 @@
       grid-area: desc;
       margin-block: 0;
       font-size: 12px;
+      opacity: .75;
     }
 
     .work-mode {
       grid-area: mode;
       margin-inline-start: auto;
       font-size: 14px;
+    }
+  }
+
+  .profile {
+    padding: var(--padding);
+
+    // background-color: #cee6f1;
+    background-color: #cbe0ea;
+
+    // & > .photo {
+    //   img {
+    //     display: block;
+    //     width: 100%;
+    //   }
+    // }
+
+    // & > .skills {
+    //   padding: var(--padding);
+    // }
+
+    .section-title {
+      margin-block: 0 15px;
+      // color: #76919f;
+      color: #667f8c;
+      font-size: 14px;
+    }
+
+    .skills {
+      ul li {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        font-size: 14px;
+
+        & + li {
+          margin-block-start: 10px;
+        }
+      }
+
+      .additional {
+        margin-block: 15px 0;
+        font-size: 12px;
+        color: #86a2af;
+      }
+
+      .bonus-title {
+        margin-block: 15px;
+        font-size: 14px;
+        // text-transform: uppercase;
+        color: var(--color-accent);
+      }
+
+      & + .skills {
+        margin-block-start: 30px;
+      }
     }
   }
 }

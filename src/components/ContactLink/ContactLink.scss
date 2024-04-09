@@ -3,10 +3,10 @@
     line-height: 20px;
 
     .icon {
-        color: #0098de;
+        color: var(--color-accent);
 
         svg {
-            height: 1.2em;
+            block-size: 1.2em;
             margin-inline-end: 0.4em;
             vertical-align: middle;
         }

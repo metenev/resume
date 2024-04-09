@@ -1,0 +1,31 @@
+.rating.numeric {
+    display: inline-flex;
+    align-items: baseline;
+    gap: 0.2em;
+
+    .value {
+        // font-weight: 900;
+        font-weight: 400;
+
+        &.badge {
+            padding: 0;
+            inline-size: 22px;
+            block-size: 22px;
+            border-radius: 50%;
+
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+
+            background: #b3c5ce;
+
+            font-size: 13px;
+            line-height: 13px;
+        }
+    }
+
+    .divider, .total {
+        font-size: 12px;
+        opacity: 0.6;
+    }
+}

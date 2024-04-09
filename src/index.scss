@@ -2,6 +2,7 @@
   --color-page: #f6fcff;
   --color-background: #86a2af;
   --color-text: #394145;
+  --color-accent: #0098de;
 
   font-family: "Inter", system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -22,7 +23,7 @@ body {
 }
 
 a {
-  color: #0098de;
+  color: var(--color-accent);
   text-decoration: none;
 }
 
@@ -39,4 +40,17 @@ ul {
   background-color: #cbe0ea;
   // color: var(--color-page);
   border-radius: 2px;
+}
+
+body > .copy {
+  margin-block: 40px 0;
+  font-size: 12px;
+  text-align: center;
+  color: var(--color-text);
+  opacity: 0.5;
+
+  a {
+    color: inherit;
+    border-bottom: 1px solid;
+  }
 }
