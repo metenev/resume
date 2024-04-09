@@ -1,12 +1,13 @@
 :root {
   --color-page: #f6fcff;
   --color-background: #86a2af;
+  --color-text: #394145;
 
   font-family: "Inter", system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
-  color: #394145;
+  color: var(--color-text);
   background-color: var(--color-background);
 
   font-synthesis: none;
@@ -22,6 +23,7 @@ body {
 
 a {
   color: #0098de;
+  text-decoration: none;
 }
 
 ul {

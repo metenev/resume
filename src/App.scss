@@ -9,7 +9,7 @@
   background-color: var(--color-page);
 
   & > .header {
-    margin-block-end: 50px;
+    margin-block-end: 60px;
 
     .logo {
       display: flex;
@@ -44,6 +44,16 @@
 
       display: flex;
       gap: 15px;
+    }
+  }
+
+  & > .footer {
+    padding-block: 50px 20px;
+    font-size: 12px;
+    text-align: center;
+
+    p {
+      margin-block: 0;
     }
   }
 

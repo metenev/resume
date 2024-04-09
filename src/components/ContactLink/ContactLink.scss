@@ -1,0 +1,26 @@
+.contact-link {
+    display: inline-block;
+    line-height: 20px;
+
+    .icon {
+        color: #0098de;
+
+        svg {
+            height: 1.2em;
+            margin-inline-end: 0.4em;
+            vertical-align: middle;
+        }
+    }
+
+    .text {
+        vertical-align: middle;
+    }
+
+    &:not([href]) {
+        color: var(--color-text);
+
+        .text {
+            color: inherit;
+        }
+    }
+}

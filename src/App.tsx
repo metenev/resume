@@ -1,4 +1,10 @@
+import EmailIcon from './assets/email_icon.svg?react'
+import LinkedInIcon from './assets/linkedin_icon.svg?react'
+import TelegramIcon from './assets/telegram_icon.svg?react'
+import LocationIcon from './assets/geo_icon.svg?react'
+
 import './App.scss'
+import { ContactLink } from './components/ContactLink/ContactLink'
 
 function App() {
   return (
@@ -19,16 +25,31 @@ function App() {
 
         <ul className="contact-info">
           <li>
-            <a href="mailto:metenev.d@gmail.com">metenev.d@gmail.com</a>
+            <ContactLink
+              href='mailto:metenev.d@gmail.com'
+              text='metenev.d@gmail.com'
+              icon={<EmailIcon />}
+            />
           </li>
           <li>
-            <a href="https://www.linkedin.com/in/metenev/">in/metenev</a>
+            <ContactLink
+              href='https://www.linkedin.com/in/metenev/'
+              text='in/metenev'
+              icon={<LinkedInIcon />}
+            />
           </li>
           <li>
-            <a href="https://t.me/metenev/">@metenev</a>
+            <ContactLink
+              href='https://t.me/metenev'
+              text='metenev'
+              icon={<TelegramIcon />}
+            />
           </li>
           <li>
-            <span>Yerevan, Armenia</span>
+            <ContactLink
+              text='Yerevan, Armenia'
+              icon={<LocationIcon />}
+            />
           </li>
         </ul>
       </header>
@@ -151,6 +172,10 @@ function App() {
         </aside>
 
       </section>
+
+      <footer className="footer">
+        <p>That&apos;s basically it! If you've read this far you&apos;re definitely a human. Therefore, thanks for your time and have a good day! 🤝</p>
+      </footer>
     </>
   )
 }
