@@ -232,7 +232,7 @@ function App() {
       </section>
 
       <footer className="footer">
-        <p>That&apos;s basically it! If you&apos;ve read this far you&apos;re definitely a human. Therefore, thanks for your time and have a good day! 🤝</p>
+        <p>That&apos;s basically it! If you&apos;ve read this far you&apos;re definitely a human. Therefore, thanks for your time and have a good day! <span className="emoji">🤝</span></p>
       </footer>
     </>
   )
