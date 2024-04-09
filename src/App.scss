@@ -1,0 +1,151 @@
+#root {
+  --padding: 30px;
+  --experience-items-spacing: 50px;
+
+  max-width: 990px;
+  margin: 0 auto;
+  padding: var(--padding);
+
+  background-color: var(--color-page);
+
+  & > .header {
+    margin-block-end: 50px;
+
+    .logo {
+      display: flex;
+      gap: 15px;
+      color: var(--color-background);
+
+      svg {
+        display: block;
+      }
+
+      .details {
+        font-size: 12px;
+        font-weight: 300;
+        line-height: 20px;
+      }
+    }
+
+    h1 {
+      margin-block: 40px 0;
+
+      & + h2 {
+        margin-block: 0 20px;
+        padding-inline: 1px;
+
+        font-size: 18px;
+        font-weight: 400;
+      }
+    }
+
+    .contact-info {
+      font-size: 12px;
+
+      display: flex;
+      gap: 15px;
+    }
+  }
+
+  .main-content {
+    display: grid;
+    grid-template-areas:
+        'aside sum'
+        'aside exp';
+    grid-template-columns: 200px 1fr;
+    gap: 30px;
+
+    .summary {
+      grid-area: sum;
+    }
+
+    .experiences {
+      grid-area: exp;
+    }
+
+    .profile {
+      grid-area: aside;
+      margin-inline-start: calc(var(--padding) * -1);
+      padding: var(--padding);
+
+      // background-color: #cee6f1;
+      background-color: #cbe0ea;
+
+      // & > .photo {
+      //   img {
+      //     display: block;
+      //     width: 100%;
+      //   }
+      // }
+
+      // & > .skills {
+      //   padding: var(--padding);
+      // }
+    }
+  }
+
+  .content-block {
+    h3 {
+      margin-block: 0 20px;
+
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 18px;
+
+      & + .content-block-nested {
+        margin-block-start: var(--experience-items-spacing);
+      }
+    }
+
+    &.has-children .content-block-nested {
+      .header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-block-end: 15px;
+
+        h4 {
+          margin: 0;
+          // font-weight: 500;
+        }
+
+        .date-span {
+          font-size: 14px;
+        }
+      }
+
+      & + .content-block-nested {
+        margin-block-start: var(--experience-items-spacing);
+      }
+    }
+  }
+
+  .company {
+    display: grid;
+    grid-template-areas:
+        'name mode'
+        'desc desc';
+
+    margin-block-end: 15px;
+
+    .title {
+      grid-area: name;
+      margin-block: 0;
+
+      color: #4295bc;
+      text-transform: uppercase;
+    }
+
+    .desc {
+      grid-area: desc;
+      margin-block: 0;
+      font-size: 12px;
+    }
+
+    .work-mode {
+      grid-area: mode;
+      margin-inline-start: auto;
+      font-size: 14px;
+    }
+  }
+}
