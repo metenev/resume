@@ -24,11 +24,16 @@
         font-size: 12px;
         font-weight: 300;
         line-height: 20px;
+
+        @media (max-width: 576px) {
+          display: none;
+        }
       }
     }
 
     h1 {
-      margin-block: 40px 0;
+      margin-block: 40px 10px;
+      line-height: 1em;
 
       & + h2 {
         margin-block: 0 20px;
@@ -43,7 +48,9 @@
       font-size: 12px;
 
       display: flex;
-      gap: 15px;
+      flex-wrap: wrap;
+      column-gap: 15px;
+      row-gap: 5px;
     }
   }
 
@@ -77,6 +84,18 @@
       grid-area: aside;
       margin-inline-start: calc(var(--padding) * -1);
     }
+
+    @media (max-width: 750px) {
+      grid-template-areas:
+          'sum'
+          'exp'
+          'aside';
+      grid-template-columns: 1fr;
+
+      .profile {
+        margin-inline-start: 0;
+      }
+    }
   }
 
   .content-block {
@@ -109,6 +128,10 @@
 
         & + li {
           margin-block-start: 5px;
+
+          @media (max-width: 576px) {
+            margin-block-start: 15px;
+          }
         }
       }
     }
@@ -128,6 +151,11 @@
         .date-span {
           font-size: 14px;
         }
+
+        @media (max-width: 576px) {
+          display: block;
+          margin-block-end: 30px;
+        }
       }
 
       & + .content-block-nested {
@@ -141,6 +169,7 @@
     grid-template-areas:
         'name mode'
         'desc desc';
+    align-items: center;
 
     margin-block-end: 15px;
 
@@ -163,6 +192,10 @@
       grid-area: mode;
       margin-inline-start: auto;
       font-size: 14px;
+    }
+
+    @media (max-width: 576px) {
+      row-gap: 5px;
     }
   }
 
