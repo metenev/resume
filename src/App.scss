@@ -11,6 +11,12 @@
   & > .header {
     margin-block-end: 60px;
 
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
     .logo {
       display: flex;
       gap: 15px;

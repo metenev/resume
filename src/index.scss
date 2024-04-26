@@ -51,6 +51,39 @@ ul {
   border-radius: 2px;
 }
 
+.Dropdown-root {
+  font-size: 12px;
+
+  .Dropdown-control {
+    padding-block: 5px;
+    background: #cbe0ea;
+    border: none;
+    color: var(--color-text);
+
+    cursor: pointer;
+
+    .Dropdown-arrow {
+      top: 50%;
+      transform: translateY(-50%);
+      border-top-color: #86a2af;
+    }
+  }
+
+  .Dropdown-menu {
+    border: none;
+    box-shadow: 2px 5px 35px rgba(#5d7079, .3);
+
+    .Dropdown-option {
+      color: var(--color-text);
+
+      &.is-selected {
+        background-color: var(--color-accent);
+        color: white;
+      }
+    }
+  }
+}
+
 body > .copy {
   margin-block: 40px 0;
   font-size: 12px;
