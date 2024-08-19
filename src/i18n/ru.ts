@@ -128,6 +128,14 @@ const messages: MessagesSet = {
                     rank: 4
                 },
                 {
+                    name: 'React Query',
+                    rank: 5
+                },
+                {
+                    name: 'Chakra UI / Mantine',
+                    rank: 4
+                },
+                {
                     name: 'Angular 15+',
                     rank: 4.5
                 },
@@ -170,8 +178,16 @@ const messages: MessagesSet = {
                     rank: 4.5
                 },
                 {
+                    name: 'PostgreSQL',
+                    rank: 3.5
+                },
+                {
                     name: 'MongoDB',
                     rank: 4.5
+                },
+                {
+                    name: 'Firebase',
+                    rank: 4
                 },
                 {
                     name: 'Redis',
