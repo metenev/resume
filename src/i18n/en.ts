@@ -132,6 +132,10 @@ const messages: MessagesSet = {
                     rank: 5
                 },
                 {
+                    name: 'Chakra UI / Mantine',
+                    rank: 4
+                },
+                {
                     name: 'Angular 15+',
                     rank: 4.5
                 },
@@ -142,10 +146,6 @@ const messages: MessagesSet = {
                 {
                     name: 'NgRx',
                     rank: 5
-                },
-                {
-                    name: 'Chakra UI / Mantine',
-                    rank: 4
                 },
                 {
                     name: 'Stores',
