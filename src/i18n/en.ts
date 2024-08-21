@@ -48,7 +48,7 @@ const messages: MessagesSet = {
                         'Customer web portal for performing data monitoring, analysis and remote control of the drilling process, which includes a lot of widgets and charts of all kinds displaying different types of data, theming, a bunch of user flows and complex UIs',
                         'Standalone desktop app that does same things but is being installed to the driller\'s workspace',
                         'Mobile app — for drillers too',
-                        'Backed and Frontend library of a chat for communication between operators and other staff: 2 different backed adapters (PostgreSQL + Prisma and Firebase), websockets, chat interface library for embedding into other products',
+                        'Backend and Frontend library of a chat for communication between operators and other staff: 2 different backed adapters (PostgreSQL + Prisma and Firebase), websockets, chat interface library for embedding into other products',
                         'Asset registry website that helps manage drilling hardware',
                         'Core libraries with components used across multiple apps',
                     ],
